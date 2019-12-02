@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="script/regions.js"></script>
+    <title>Regions</title>
+    <style media="screen">
+    body,html{
+      background-image: url(pics/back1.jpg);
+    }
+    .abc{
+        width: 100%;
+        height:35%;
+        font-size: 30px;
+        background-color: black;
+    }
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+      position: fixed;
+      top: 0;
+    }
+
+    li {
+      float: left;
+    }
+
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    li a:hover:not(.active) {
+      background-color: #111;
+    }
+
+    .active {
+      background-color: #4CAF50;
+    }
+    .info{
+      text-align: center;
+    }
+    .b1{
+      background-color: #4CAF50;
+      border:none;
+      color: white;
+      padding: 16px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      -webkit-transition-duration:0.4s;
+      transition-duration: 0.4s;
+      cursor: pointer;
+    }
+    .bt{
+      background-color: white;
+      color: black;
+      border: 2px solid #4CAF50;
+      border-radius: 20%;
+    }
+    .bt:hover{
+      background-color: #4CAF50;
+      color: white;
+      border-radius: 50%;
+    }
+.regions{
+  width: 250px;
+  height: 50px;
+  border: 2px solid #4CAF50;
+  border-radius: 20%;
+}
+#reg{
+  color: white;
+  font-size: 20px;
+}
+.info1{
+  color: white;
+  font-size: 20px;
+}
+.info{
+  color:white;
+}
+  </style>
+
+  </head>
+  <body>
+
+    <div class="abc">
+
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="regions.html" class="active">Regions</a></li>
+        <li><a href="name.html">Name</a></li>
+        <li><a href="type.html">Type</a></li>
+      </ul>
+  </div>
+    <br><br><br><br>
+<div class="info">
+  <h1 class="headings">Enter Region from among list!</h1>
+    <input type="text" class="regions" id="box" style="text-align:center;" value=""><br><br>
+    <button type="button" class="b1 bt" onclick="findRegion()">Search</button>
+    <div id="reg">
+
+
+    </div>
+    <div class="info1">
+      <h2 id="name1"></h2>
+      <h2 id="name9"></h2>
+      <h2 id="name3"></h2>
+      <h2 id="name4"></h2>
+    </div>
+</div>
+
+  </body>
+</html>
