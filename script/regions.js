@@ -38,11 +38,11 @@ function findRegion()
 
 			var name3 =document.getElementById('name3')
 			generation = data.main_generation.name
-			name3.innerHTML = "GENERATION THIS REGION WAS INTRODUCED INTO:- "+generation;
+			name3.innerHTML = "Genaration of this region was introduced into:- "+generation;
 
 			var name4 = document.getElementById('name4')
 			groups = data.version_groups[0].name + " , " + data.version_groups[1].name;
-			name4.innerHTML = "LIST OF VERSION GROUPS WHERE THI REGION CAN BE VISITED:- " + groups;
+			name4.innerHTML = "List of version groups where this region can be visited:- " + groups;
 		}
 	}
 	http.send();
